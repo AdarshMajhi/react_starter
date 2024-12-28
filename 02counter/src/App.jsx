@@ -5,25 +5,24 @@ import "./App.css";
 
 function App() {
 
-  let [counter,setCounter] = useState (0)
-
-  // let counter =5;
+  let [counter, setCounter] = useState(0);
 
   const addValue = () => {
     setCounter(counter + 1);
   }
 
-  const decreaseValue = () => {
+  const subtractValue = () => {
     setCounter(counter - 1);
   }
-
+ 
   return (
     <>
-      <h1>counter </h1>
-      <h2>counter value : {counter}</h2>
+      <h1>Welcome To Counter</h1>
+      <h2>Count : {counter}</h2>
 
-      <button onClick={addValue}>Add Value</button> <br />
-      <button onClick ={decreaseValue}>Decrease Value</button>
+      <button onClick={addValue}>Increase</button> 
+      <br />
+      <button onClick={subtractValue}>Decrease</button>
     </>
   );
 }
